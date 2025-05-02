@@ -1,0 +1,15 @@
+/* styles/Footer.css */
+.site-footer {
+  background-color: #0d47a1;
+  color: white;
+  padding: 15px 20px;
+  font-size: 12px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.site-footer p {
+  max-width: 1200px;
+  margin: 0 auto;
+  line-height: 1.6;
+}

@@ -1,0 +1,64 @@
+/* styles/Header.css */
+.site-header {
+  background: linear-gradient(135deg, #1e88e5, #0d47a1);
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 80px;
+  margin-right: 20px;
+}
+
+.header-text {
+  flex-grow: 1;
+}
+
+.header-text h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.header-text h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.header-text h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+  }
+
+  .header-text h2 {
+    font-size: 18px;
+  }
+
+  .header-text h3 {
+    font-size: 16px;
+  }
+}

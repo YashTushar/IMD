@@ -1,0 +1,141 @@
+/* styles/MainContent.css */
+.main-content {
+  display: flex;
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  height: fit-content;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.image-viewer {
+  flex-grow: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+}
+
+.image-viewer img {
+  max-width: 100%;
+  max-height: 800px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.category {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.category:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.category h2 {
+  color: #0d47a1;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.category-icon {
+  margin-right: 8px;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.links-grid a,
+.full-disk-links a,
+.additional-links a {
+  color: #1976d2;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.links-grid a:hover,
+.full-disk-links a:hover,
+.additional-links a:hover {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  transform: translateY(-2px);
+}
+
+.full-disk-links {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.additional-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.special-link {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  font-weight: 500;
+}
+
+.link-icon {
+  margin-right: 5px;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #d32f2f;
+  font-style: italic;
+}
+
+@media (max-width: 1000px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    flex: none;
+    width: 100%;
+    max-height: none;
+  }
+
+  .links-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
