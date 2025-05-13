@@ -18,7 +18,7 @@ function App() {
                 <Header />
                 <div className="nav-link-container">
                   <a
-                    href="https://nowcast-psi.vercel.app/"
+                    href="https://nowcast-beta.vercel.app/"
                     className="nowcasting-link"
                     target="_blank"
                     rel="noopener noreferrer"
