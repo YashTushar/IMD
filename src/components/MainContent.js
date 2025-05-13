@@ -4,7 +4,7 @@ import "../styles/MainContent.css";
 import { FaCloudRain, FaSatellite, FaArchive, FaBook } from "react-icons/fa";
 
 function MainContent() {
-  const [selectedImage, setSelectedImage] = useState("/img/animation.gif");
+  const [selectedImage, setSelectedImage] = useState("/img/airmas.png");
 
   const handleImageClick = (imagePath) => {
     setSelectedImage(imagePath);
